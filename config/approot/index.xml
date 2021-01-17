@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<messages>
+    <message id="page.index">
+        <div class="container-fluid">
+            <div class="row">
+                <p class="h1 text-center">Szakdolgozat</p>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="form" style="height: 15vh">
+                        <div class="form-group">
+                            <label>Upload a source file</label>
+                            ${fileUploadPlace}            
+                        </div>
+                        <div class="form-actions">
+                            ${submit class="btn-primary"}
+                            ${download class="btn-primary pull-right"}
+                        </div>
+                    </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <p class="h2 panel-title">Options</p>
+                            </div>
+                            <div class="panel-body">
+                                <div class="cotainer">
+                                    <p class="h5">Curly brackets:</p>
+                                    ${radioButtonGroup}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-md-9">
+                    <div id="codePanel" class="panel panel-default">
+                        <div class="panel-heading">
+                            <p class="h3 panel-title">Source code</p>
+                        </div>
+                        <div class="panel-body">
+                            <pre id="testContent" class="line-numbers language-C" style="white-space: pre-wrap;height: 80vh;overflow-y: auto;"></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </message>
+</messages>

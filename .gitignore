@@ -1,0 +1,10 @@
+*.out
+obj/
+tmp/
+.vscode
+parser
+*test.*
+*.i
+main.c
+symbols.hpp
+*.output
